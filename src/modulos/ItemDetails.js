@@ -18,9 +18,10 @@ function ItemDetail(props) {
                <p className=''>Stock : {props.item.stock} </p>
 
                {
-                ItemCount === 1
+                ItemCount === 0
+
                   ?<ItemCount stock={props.item.stock} initial={props.item.initial}/>
-                  : <Link to='/cart'><button type="button" class="btn btn-dark">Check Out</button></Link>
+                  :<Link to='/cart'><button type="button" class="btn btn-dark">Check Out</button></Link>
 
                }
              </div>
