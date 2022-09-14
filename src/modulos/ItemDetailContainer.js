@@ -21,9 +21,10 @@ function ItemDetailContainer() {
 
   return (
     oneProduct ? <ItemDetail item={oneProduct}/> :
-      <div>
-        <div></div>
-        <p>Cargando...</p>
+      <div className=" d-flex justify-content-center">
+        <div>
+            <p>Cargando...</p>
+        </div>
       </div>
   );
 };
