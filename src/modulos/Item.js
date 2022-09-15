@@ -7,7 +7,7 @@ export default function Item(props) {
   return (
     <>
     <div className='d-inline-flex m-5 w-25 '>
-       <div className='justify-content-xxl-center '>
+      <div className='justify-content-xxl-center'>
           <div className=" cart ">
             <div className='productCard'>
               <img className=' w-50' src={props.imgPath} alt="dalee pipi" />
@@ -15,7 +15,7 @@ export default function Item(props) {
               <p className='productDescription'>{props.description}</p>
               <Link to={`/item/${props.id}`} ><p>Detalles</p></Link> 
               <p className='productPrice'>{props.price}</p><p>Stock : {props.stock} </p>
-              <ItemCount stock={props.stock} initial={props.initial}/>
+              <ItemCount stock={props.stock} initial={props.initial} addCart/>
             </div>
           </div>
         </div>

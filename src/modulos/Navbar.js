@@ -29,7 +29,7 @@ const Navbar = () => {
 
           <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
               
-          <CartWidget/>    <span>4</span>
+          <CartWidget/><span>4</span>
           
             </div>
         </nav>

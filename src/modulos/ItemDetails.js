@@ -20,8 +20,8 @@ function ItemDetail(props) {
                {
                 ItemCount === 0
 
-                  ?<ItemCount stock={props.item.stock} initial={props.item.initial}/>
-                  :<Link to='/cart'><button type="button" class="btn btn-dark">Check Out</button></Link>
+                  ?<ItemCount stock={props.item.stock} initial={props.item.initial} addCart/>
+                  :<Link to='./Cart'><button type="button" class="btn btn-dark">Check Out</button></Link>
 
                }
              </div>

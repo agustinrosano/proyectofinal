@@ -1,7 +1,10 @@
-
+import { useContext  } from "react"
+import { CartContext } from "./CartContext"
 
 
 const Cart = () => {
+ const test = useContext(CartContext)
+ console.log(test)
 
     return (
         <>
@@ -10,4 +13,4 @@ const Cart = () => {
     )
 }
 
-export default Cart
+export default Cart;
