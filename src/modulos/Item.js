@@ -15,7 +15,7 @@ export default function Item(props) {
               <p className='productDescription'>{props.description}</p>
               <Link to={`/item/${props.id}`} ><p>Detalles</p></Link> 
               <p className='productPrice'>{props.price}</p><p>Stock : {props.stock} </p>
-              <ItemCount stock={props.stock} initial={props.initial} addCart/>
+              <ItemCount stock={props.stock} initial={props.initial} addCart/> 
             </div>
           </div>
         </div>
