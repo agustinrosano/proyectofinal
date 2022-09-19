@@ -1,8 +1,7 @@
 
-import { useEffect,useState } from "react"
+import { useContext, useEffect,useState } from "react"
 import { Link } from "react-router-dom";
-
-const ItemCount = ({stock=0,initial=1}) => {
+const ItemCount = ({stock=0,initial=1, }) => {
 
 
 const [counter, setCounter] =  useState (0);
@@ -32,6 +31,7 @@ const addCart = () => {
     setnose(nose+1)
     alert ("se agregaro correctamente al carrito " + counter + " gracias" )
     
+   
   
    
 };

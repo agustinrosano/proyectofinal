@@ -44,7 +44,6 @@ const ItemDetail = (props) => {
                <p className=''>Stock : {props.item.stock} </p>
               
               
-
              
              </div>
            </div>
