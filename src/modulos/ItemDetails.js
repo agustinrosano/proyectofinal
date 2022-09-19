@@ -4,6 +4,7 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = (props) => {
    
+  
 
   return (
     <>
@@ -18,7 +19,7 @@ const ItemDetail = (props) => {
               <p className='card-text'>{props.item.description}</p>
                <p className='card-text'>{props.item.price}</p>
                <p className='card-text'>Stock : {props.item.stock} </p>
-                <ItemCount stock={props.item.stock} initial={props.item.initial}  />
+                <ItemCount stock={props.item.stock} initial={props.item.counter}  />
                
             </div>
           </div>
