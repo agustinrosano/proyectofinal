@@ -18,10 +18,11 @@ function App() {
       <Route path='/' element={<ItemListContainer/>} />
       <Route path='/category/:id' element={<ItemListContainer/>}/>
       <Route path='/item/:id' element={<ItemDetailContainer/>}/>
-      <Route part='/Cart' element={<Cart/>}/>
+      <Route path='/Cart' element={<Cart/>}/>
   </Routes>
     
     </BrowserRouter>
+
     </CartContextProvider>
   );
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ItemCount = ({stock=0,initial=1}) => {
 
 
-const [counter, setCounter] =  useState (1);
+const [counter, setCounter] =  useState (0);
 
 useEffect(() => {
     setCounter(initial);
@@ -25,8 +25,10 @@ const decremento = ( ) => {
 };
 
 const addCart = () => {
-    
-    alert ("se agregaro correctamente al carrito" + counter + "gracias" )
+
+   
+
+    alert ("se agregaro correctamente al carrito " + counter + " gracias" )
     
   
    
@@ -36,17 +38,19 @@ const addCart = () => {
 
 return(
     <>
-    {
-        counter != 0
+    
+        
 
-        ? <div className="d-flex">
+        <div className="d-flex">
             <button onClick={incremento} type="button" className="btn btn-outline-primary">+</button>
             <button  className="btn btn-outline-secondary" >{counter}</button>
             <button onClick={decremento} type="button" className="btn btn-outline-primary">-</button>
-            <button onClick={ addCart } type="button" className="btn btn-primary "> Add to Cart </button>
-            </div>
-
-        :  <Link to='/Cart'><button type="button" class="btn btn-dark">Check Out</button></Link>
+        </div>
+       {     
+        counter
+        
+        ? <button onClick={ addCart } type="button" className="btn btn-primary "> Add to Cart </button>
+        :  <Link to='/cart'><button type="button" class="btn btn-dark">Check Out</button></Link>
     }
        
 
