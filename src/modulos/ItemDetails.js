@@ -1,10 +1,9 @@
 import ItemCount from "./ItemCount";
-import React from "react";
-import { Link } from "react-router-dom";
 
 
 
-function ItemDetail(props) {
+const ItemDetail = (props) => {
+   
 
   return (
     <>
@@ -18,8 +17,9 @@ function ItemDetail(props) {
               <h5 className="card-title">{props.item.name}</h5>
               <p className='card-text'>{props.item.description}</p>
                <p className='card-text'>{props.item.price}</p>
-               <p className='card-text'>Stock : {props.item.stock} 
-               </p><ItemCount stock={props.item.stock} initial={props.item.initial}  />
+               <p className='card-text'>Stock : {props.item.stock} </p>
+                <ItemCount stock={props.item.stock} initial={props.item.initial}  />
+               
             </div>
           </div>
         </div>
