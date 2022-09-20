@@ -10,8 +10,8 @@ export default function Item(props) {
   <img src={props.imgPath} class="card-img-top" alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{props.name}</h5>
-    <p className="card-text">{props.description}</p>
-    <p className="card-text">precio : {props.price}</p><p className="card-text">Stock : {props.stock}</p>
+    {/* <p className="card-text">{props.description}</p> */}
+    <p className="card-text">Precio : {props.price}</p><p className="card-text">Stock : {props.stock}</p>
     <Link to={`/item/${props.id}`} ><p className='btn btn-primary'>Detalles</p></Link>
   </div>
 </div>
