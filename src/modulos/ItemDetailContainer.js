@@ -13,11 +13,11 @@ function ItemDetailContainer() {
 
   useEffect(() => {
 
-    promise(data.find(item => item.id == id))
+    promise(data.find(item => item.id === id))
       .then(result => setOneProduct(result))
       .catch(err => console.log(err))
 
-  }, []);
+  }, [id]);
 
   return (
     oneProduct ? <ItemDetail item={oneProduct}/> :

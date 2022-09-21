@@ -1,11 +1,13 @@
 
-import { useContext, useEffect,useState } from "react"
+import {  useEffect,useState } from "react"
 import { Link } from "react-router-dom";
+
+
 const ItemCount = ({stock=0,initial=1, }) => {
 
 
 const [counter, setCounter] =  useState (0);
-
+//const test = usecontext
 const [nose, setnose] =  useState (1);
 
 useEffect(() => {
@@ -31,7 +33,8 @@ const addCart = () => {
     setnose(nose+1)
     alert ("se agregaro correctamente al carrito " + counter + " gracias" )
     
-   
+   // aca tendria que usar la funcion global pero el tema es que no puedo meter 
+   // ningun objeto por que no recibo ninguno aca no se que hacer
   
    
 };

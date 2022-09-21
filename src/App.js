@@ -10,7 +10,7 @@ import CartContextProvider from './modulos/CartContext'
 
 function App() {
   return (
-    <CartContextProvider>
+    <CartContext.Provider>
     <BrowserRouter>
 
   <Navbar  />
@@ -23,7 +23,7 @@ function App() {
     
     </BrowserRouter>
 
-    </CartContextProvider>
+    </CartContext.Provider>
   );
 }
 
